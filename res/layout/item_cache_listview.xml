@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+
+    <ImageView 
+        android:id="@+id/img_icon"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_launcher"
+        android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:id="@+id/tv_appname"
+        android:layout_toRightOf="@id/img_icon"
+        android:text="应用程序名"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+        <TextView 
+        android:id="@+id/tv_cachesize"
+        android:text="缓存大小"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/img_icon"
+        android:layout_below="@id/tv_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <ImageView 
+            android:id="@+id/img_clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/list_button_clean_pressed"/>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mobilephone="http://schemas.android.com/apk/res/com.cca.mobilephone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+       style="@style/text_setup_title"
+        android:text="4、恭喜你设置完成"/>
+    
+       <Button 
+       style="@style/text_setup_content"
+       android:onClick="activeAdmin"
+        android:text="点击按钮激活超级管理员\n可以进行远程锁屏、清除数据、报警音乐等"/>
+    
+    <com.cca.mobilephone.ui.SettingCheckView
+        android:id="@+id/set_update_text"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp" 
+        android:layout_height="wrap_content"
+        mobilephone:bigtitle="开启防盗保护" />
+    <LinearLayout 
+      		
+      	  android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          
+          <ImageView 
+              android:src="@android:drawable/presence_invisible"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              />
+          
+          <ImageView 
+                android:src="@android:drawable/presence_invisible"
+            	android:layout_width="wrap_content"
+              	android:layout_height="wrap_content"
+              />
+          <ImageView 
+                android:src="@android:drawable/presence_invisible"
+	            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              />
+          <ImageView 
+              android:src="@android:drawable/presence_online"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              />
+      </LinearLayout>
+      
+      <RelativeLayout 
+      	android:layout_width="match_parent"
+      	android:layout_height="match_parent"    >
+          
+          <ImageView 
+              android:background="@drawable/ic_action_phone_start"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:layout_centerInParent="true"/>
+          <Button 
+              style="@style/btn_next_setting"
+                android:text="设置完成"
+                android:onClick="next"
+             />
+           <Button 
+            style="@style/btn_pre_setting"
+            android:onClick="pre"
+          />
+          
+      </RelativeLayout>
+
+</LinearLayout>

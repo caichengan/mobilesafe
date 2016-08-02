@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.cca.mobilephone.SplashActivity" >
+
+    <TextView 
+        style="@style/text_setup_title"
+        android:text="高级工具"/>
+    <Button 
+        android:onClick="AddessQuerry"
+        style="@style/text_setup_content"
+        android:text="查询电话归属地"/>
+     <Button 
+        android:onClick="UsualNumber"
+        style="@style/text_setup_content"
+        android:text="常用号码查询"/>
+     <Button 
+        android:onClick="SMSBackUp"
+        style="@style/text_setup_content"
+        android:text="短信备份"/>
+     <Button 
+        android:onClick="SMSReturnUp"
+        style="@style/text_setup_content"
+        android:text="短信还原"/>
+     <Button 
+        android:onClick="AppLocked"
+        
+        style="@style/text_setup_content"
+        android:text="软件安全锁"/>
+     
+
+   
+
+</LinearLayout>

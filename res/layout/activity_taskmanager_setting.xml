@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mobilephone="http://schemas.android.com/apk/res/com.cca.mobilephone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        style="@style/text_setup_title"
+        android:text="手机进程设置"/>
+
+    <com.cca.mobilephone.ui.SettingCheckView
+        android:id="@+id/task_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        mobilephone:bigtitle="显示手机系统进程" 
+        >
+        </com.cca.mobilephone.ui.SettingCheckView>
+        <com.cca.mobilephone.ui.SettingCheckView
+        android:id="@+id/task_autokill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        mobilephone:bigtitle="定期清理进程" 
+        >
+        
+    </com.cca.mobilephone.ui.SettingCheckView>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:mobilephone="http://schemas.android.com/apk/res/com.cca.mobilephone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+       style="@style/text_setup_title"
+        android:text="2、手机卡绑定"/>
+    <TextView 
+        style="@style/text_setup_content"
+        android:text="通过绑定手机SIM，如果下次手机重启发现SIM卡变化了，就会发送报警短信！"/>
+
+    <com.cca.mobilephone.ui.SettingCheckView
+        android:id="@+id/set_bind_text"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        mobilephone:bigtitle="点击绑定SIM卡" />
+    
+     <LinearLayout 
+      		
+      	  android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          
+          <ImageView 
+              android:src="@android:drawable/presence_invisible"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              />
+          <ImageView 
+              android:src="@android:drawable/presence_online"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              />
+          <ImageView 
+                android:src="@android:drawable/presence_invisible"
+            	android:layout_width="wrap_content"
+              	android:layout_height="wrap_content"
+              />
+          <ImageView 
+                android:src="@android:drawable/presence_invisible"
+	            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              />
+      </LinearLayout>
+      
+      <RelativeLayout 
+      	android:layout_width="match_parent"
+      	android:layout_height="match_parent"    >
+          
+          <ImageView 
+              android:background="@drawable/ic_action_lock_closed"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:layout_centerInParent="true"/>
+          <Button 
+              style="@style/btn_next_setting"
+              android:onClick="next"
+             />
+           <Button 
+               android:onClick="pre"
+            style="@style/btn_pre_setting"/>
+          
+      </RelativeLayout>
+</LinearLayout>

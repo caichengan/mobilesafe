@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mobilephone="http://schemas.android.com/apk/res/com.cca.mobilephone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF00EC"
+        android:gravity="center"
+        android:text="设置中心"
+        android:textSize="40sp" />
+
+ 
+    
+    <com.cca.mobilephone.ui.SettingCheckView
+        android:id="@+id/set_update_text"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        mobilephone:bigtitle="开启自动更新" />
+
+    <com.cca.mobilephone.ui.SettingCheckView
+        android:id="@+id/set_blacknumber_text"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        mobilephone:bigtitle="开启自动拦截" />
+    
+    <com.cca.mobilephone.ui.SettingCheckView
+        android:id="@+id/set_showaddresss"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        mobilephone:bigtitle="开启电话归属地显示" />
+    
+    <com.cca.mobilephone.ui.SettingCheckView
+        android:id="@+id/set_whatchdogapplock"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        mobilephone:bigtitle="开启软件程序锁" />
+    
+     <com.cca.mobilephone.ui.SettingChangedView
+        android:id="@+id/set_changedview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:onClick="settingChanged"
+        android:layout_height="wrap_content"
+        mobilephone:title="归属地提示框风格选择"
+        mobilephone:desc="描述信息" />
+    
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <EditText 
+       android:padding="10dp"
+       android:id="@+id/ed_number"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="15sp"
+       android:hint="请输入电话号码"
+       />
+   <Button 
+       android:layout_width="wrap_content"
+       android:onClick="QuerrynumberAddress"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"
+       android:text="查询"/>
+   <TextView 
+       android:id="@+id/tv_numbergetaddress"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"
+       android:text="查询结果："/>
+
+</LinearLayout>
